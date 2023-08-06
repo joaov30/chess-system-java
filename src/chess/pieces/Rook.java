@@ -23,6 +23,7 @@ public class Rook extends ChessPiece {
 
         Position p = new Position(0,0);
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //Cima
         p.setValues(position.getRow() -1, position.getColumn());
         while (getBoard().positionExists(p) && !getBoard().thereIsAPiece(p)){
@@ -60,6 +61,7 @@ public class Rook extends ChessPiece {
             p.setRow(p.getRow() + 1);
 
         }
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         if (getBoard().positionExists(p) && isThereOpponentPiece(p)){
             mat[p.getRow()][p.getColumn()] = true;
         }
